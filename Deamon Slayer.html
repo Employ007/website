@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deamon Slayer</title>
+</head>
+<style>
+    body {
+        color: rgb(87, 168, 131);
+        margin: 0px;
+        padding: 0px;
+        background: url('/kat.png');
+        background-repeat: no-repeat;
+        background-size: 1599px 1092px;
+        height: 1000px;
+
+
+    }
+
+    .left {
+        display: inline-block;
+
+        position: absolute;
+        left: 80px;
+        top: 20px;
+
+    }
+
+    .left img {
+        width: 100px;
+    }
+
+    .mid {
+        display: block;
+        width: 60%;
+        margin: 20px auto;
+
+        background-color: aqua;
+        border-radius: 25px;
+
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        right: 25px;
+        top: 20px;
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        color: black;
+        padding: 8px 22px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:after {
+        color: rgb(68, 170, 84);
+        text-shadow: 4px gold;
+        -webkit-text-stroke-width: thin;
+        font-weight: 700;
+    }
+
+    .zoro {
+        display: flex;
+        justify-content: center;
+        -webkit-text-stroke-width: medium;
+    }
+
+    .btn {
+        margin: 0px 10px;
+        background-color: white;
+        color: black;
+        padding: 6px 1px;
+        border-radius: 9px;
+        font-size: 15px;
+        cursor: pointer;
+
+    }
+
+    .btn:hover {
+        background-color: aqua;
+        color: black;
+        font-weight: 900;
+    }
+
+    .container {
+
+        display: flex;
+        justify-content: center;
+        border: solid 2px green;
+        margin: 51PX 312PX;
+        padding: 28px 37px;
+        width: 25%;
+        border-radius: 10px;
+        text-decoration-color: black;
+    }
+
+    .container h3 {
+        text-align: 'center';
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container button {
+        font-size: 15px;
+        margin: 7px 32px;
+        padding: 6px 46px;
+        font-weight: 300;
+
+    }
+
+    .formgroup {
+        display: block;
+        margin: 3px 20px;
+        padding: 4px 1px
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <div>
+                <img src="./logo.png" alt="">
+
+                <span class="zoro">Deamon Slayer</span>
+            </div>
+
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Slayer Squad Home</a></li>
+                <li><a href="#" class="active">Breathing Techniqes</a></li>
+                <li><a href="#" class="active">Contact Slayer Squad</a></li>
+                <li><a href="#" class="active">About Salyer Squad</a></li>
+            </ul>
+
+        </div>
+        <div class="right">
+            <button class="btn">Call a Squad &nbsp;&nbsp;&nbsp;</button><button class="btn">Objection Killed</button>
+
+        </div>
+
+
+    </header>
+    <div class="container">
+        <form action="noaction.php">
+            <h3>Candidate Aplication Form</h3>
+            <div class="formgroup">
+                <input type="text" name="form" placeholder="Enter your favourite Hashira">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="form" placeholder="Enter your breathing style">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="form" placeholder="Enter your favourite Katana">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your favourite Season">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+
+
+    </div>
+
+</body>
+
+</html>
